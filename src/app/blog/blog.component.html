@@ -1,0 +1,10 @@
+<div class="container">
+  <h1 class="text-center">
+    Latest News
+  </h1>
+  <div *ngFor="let data of fData|limit:1">
+    <h3>{{data.title}}</h3>
+    <p><img [src]="data.urlToImage" height="300" width="100%"> </p>
+    <p>{{data.content}}</p>
+  </div>
+</div>
